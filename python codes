@@ -1,0 +1,21 @@
+Avenger = ['Thor','IronMan','Hulk','captianAmerica','HawkEye','BlackWidow'] #Creating  a List
+print(Avenger)#Printing that List
+print('Alien avenger is ' + Avenger[0].title())#Printing using String Manipulation
+Avenger[0] = 'Spiderman'#Modify the list
+print('new avenger is ' + Avenger[0].title())#Printing the modified one
+Avenger.append('thor') #Appending the new element(added at last)
+print(Avenger)
+Avenger.insert(2,'antman')#insertion at 2
+print(Avenger)
+del Avenger[2]#deleting at 2
+print(Avenger)
+popped = Avenger.pop()#removing using pop so it can be used again (last is popped) and we can use pop(2) like that also
+print('Popped is '+ popped)
+Avenger.remove('Hulk')#Using Remove to delete by string name
+print(sorted(Avenger))#Temporary sorting
+print(Avenger)
+Avenger.sort()#permanent Sorting,Alphabetical
+print(Avenger)
+Avenger.sort(reverse=True)#sorting Reverse Alphabetical
+print(Avenger)
+print(len(Avenger))#To find the length of the list
